@@ -98,7 +98,7 @@ class FTP:
             # ----------------------------
             suffix = os.path.splitext(path)[-1]
             temp_path = "temp/temp" + suffix
-            mkdir(os.path.split(temp_path)[0])
+            mkdir(temp_path)
             # ----------------------------
             if suffix in [".xls", ".xlsx"]:
                 if isinstance(dt["stream"], pd.DataFrame):
